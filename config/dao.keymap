@@ -26,65 +26,16 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <19 20>;
-        };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 15>;
-        };
-
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <4 3>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <7 8>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <28 27>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <31 32>;
-        };
-
-        toggle_control {
-            bindings = <&tog 2>;
-            key-positions = <37 40>;
-        };
-
-        caps {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <38 39>;
-        };
-
-        set_main {
-            bindings = <&to 0>;
-            key-positions = <17 18>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "MAIN";
             bindings = <
-  &kp LGUI   &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y           &kp U  &kp I      &kp O    &kp P      &kp RIGHT_COMMAND
-  &kp LCTRL  &kp A  &kp S  &kp D  &kp F  &kp G             &kp H           &kp J  &kp K      &kp L    &kp SEMI   &kp RCTRL
-  &kp LALT   &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N           &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RALT
-                           &none  &mo 1  &kp LEFT_SHIFT    &kp LEFT_SHIFT  &mo 1  &none
+  &kp LGUI   &kp Q  &kp W  &kp E           &kp R  &kp T    &kp Y  &kp U  &kp I            &kp O    &kp P      &kp RIGHT_COMMAND
+  &kp LCTRL  &kp A  &kp S  &kp D           &kp F  &kp G    &kp H  &kp J  &kp K            &kp L    &kp SEMI   &kp RCTRL
+  &kp LALT   &kp Z  &kp X  &kp C           &kp V  &kp B    &kp N  &kp M  &kp COMMA        &kp DOT  &kp SLASH  &kp RALT
+                           &kp LEFT_SHIFT  &mo 1  &mo 2    &mo 2  &mo 1  &kp RIGHT_SHIFT
             >;
         };
 
@@ -101,10 +52,10 @@
         control_higher_layer {
             display-name = "CONTROL";
             bindings = <
-  &mt LGUI F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7    &kp F8    &kp F9  &kp F10    &kp F11  &mt RIGHT_COMMAND F12
-  &kp LCTRL    &none   &none   &none   &none   &none     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none    &kp RCTRL
-  &kp LALT     &none   &none   &none   &none   &mo 3     &mo 3     &none     &none   &none      &none    &kp RALT
-                               &trans  &trans  &trans    &trans    &trans    &trans
+  &mt LGUI F1  &kp F2      &kp F3   &kp F4     &kp F5         &kp F6        &kp F7    &kp F8    &kp F9  &kp F10    &kp F11    &mt RIGHT_COMMAND F12
+  &kp LCTRL    &kp ESCAPE  &kp TAB  &kp SPACE  &kp BACKSPACE  &kp DELETE    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp ENTER  &kp RCTRL
+  &kp LALT     &none       &none    &none      &none          &mo 3         &mo 3     &none     &none   &none      &kp CAPS   &kp RALT
+                                    &trans     &trans         &trans        &trans    &trans    &trans
             >;
         };
 
