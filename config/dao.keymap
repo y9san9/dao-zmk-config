@@ -26,6 +26,51 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        toggle_symbols {
+            bindings = <&tog 1>;
+            key-positions = <37 40>;
+            layers = <0 1>;
+        };
+
+        toggle_control {
+            bindings = <&tog 2>;
+            key-positions = <38 39>;
+            layers = <0 2>;
+        };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <36 41>;
+        };
+
+        fast_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 38>;
+            layers = <0>;
+        };
+
+        fast_tab {
+            bindings = <&kp TAB>;
+            key-positions = <38 14>;
+            layers = <0>;
+        };
+
+        fast_space {
+            bindings = <&kp SPACE>;
+            key-positions = <38 15>;
+            layers = <0>;
+        };
+
+        fast_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 38>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
