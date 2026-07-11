@@ -51,9 +51,9 @@
         default_layer {
             display-name = "MAIN";
             bindings = <
-  &none  &kp Q  &kp W  &kp E  &kp R  &none    &none  &kp Y  &kp U  &kp I      &kp O    &none
-  &none  &kp A  &kp S  &kp D  &kp F  &none    &none  &kp H  &kp J  &kp K      &kp L    &none
-  &none  &kp Z  &kp X  &kp C  &kp V  &none    &none  &kp N  &kp M  &kp COMMA  &kp DOT  &none
+  &none  &kp Q  &kp W  &kp E  &kp R  &none    &none  &kp U  &kp I      &kp O    &kp P     &none
+  &none  &kp A  &kp S  &kp D  &kp F  &none    &none  &kp J  &kp K      &kp L    &kp SEMI  &none
+  &none  &kp Z  &kp X  &kp C  &kp V  &none    &none  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
                        &none  &mo 1  &mo 2    &mo 3  &none  &none
             >;
         };
@@ -61,9 +61,9 @@
         extra_layer {
             display-name = "SYMBOLS";
             bindings = <
-  &none  &kp N1  &kp N2  &kp N3     &kp N4  &none     &none   &kp T   &kp BSLH  &kp MINUS  &kp EQUAL  &none
-  &none  &kp N5  &kp N6  &kp N7     &kp N8  &none     &none   &kp G   &kp P     &kp LBKT   &kp RBKT   &none
-  &none  &kp N9  &kp N0  &kp GRAVE  &none   &none     &none   &kp B   &kp FSLH  &kp SEMI   &kp SQT    &none
+  &none  &kp N1  &kp N2  &kp N3     &kp N4  &none     &none   &kp T   &kp Y   &kp MINUS  &kp EQUAL  &none
+  &none  &kp N5  &kp N6  &kp N7     &kp N8  &none     &none   &kp G   &kp H   &kp LBKT   &kp RBKT   &none
+  &none  &kp N9  &kp N0  &kp GRAVE  &none   &none     &none   &kp B   &kp N   &kp SQT    &kp BSLH   &none
                          &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
