@@ -29,19 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle_symbols {
-            bindings = <&tog 5>;
-            key-positions = <37 40>;
-        };
-
-        toggle_control {
-            bindings = <&tog 5>;
-            key-positions = <38 39>;
-        };
-
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <28 31 39 38>;
+            key-positions = <28 31 39>;
         };
     };
 
