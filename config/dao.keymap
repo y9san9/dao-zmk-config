@@ -30,12 +30,12 @@
         compatible = "zmk,combos";
 
         toggle_symbols {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <37 40>;
         };
 
         toggle_control {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <38 39>;
         };
 
@@ -54,7 +54,7 @@
   &none  &kp Q  &kp W  &kp E  &kp R  &none    &none  &kp U  &kp I      &kp O    &kp P     &none
   &none  &kp A  &kp S  &kp D  &kp F  &none    &none  &kp J  &kp K      &kp L    &kp SEMI  &none
   &none  &kp Z  &kp X  &kp C  &kp V  &none    &none  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &none
-                       &none  &mo 1  &mo 2    &mo 3  &none  &none
+                       &none  &mo 1  &mo 2    &mo 3  &mo 4  &none
             >;
         };
 
@@ -83,8 +83,17 @@
             bindings = <
   &none  &kp F1  &kp F2   &kp F3   &kp F4   &none     &none   &none   &none   &none  &none  &none
   &none  &kp F5  &kp F6   &kp F7   &kp F8   &none     &none   &none   &none   &none  &none  &none
-  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none   &mo 4   &none   &none  &none  &none
+  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none   &mo 5   &none   &none  &none  &none
                           &trans   &trans   &trans    &trans  &trans  &trans
+            >;
+        };
+
+        mod_layer {
+            bindings = <
+  &trans  &trans    &trans    &trans     &trans     &trans    &trans  &trans     &trans     &trans    &trans    &trans
+  &trans  &sk LALT  &sk LGUI  &sk LCTRL  &sk LSHFT  &trans    &trans  &sk LSHFT  &sk LCTRL  &sk LGUI  &sk LALT  &trans
+  &trans  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp LSHFT  &kp LCTRL  &kp LGUI  &kp LALT  &trans
+                              &trans     &trans     &trans    &trans  &trans     &trans
             >;
         };
 
