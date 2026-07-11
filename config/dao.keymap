@@ -61,10 +61,10 @@
         extra_layer {
             display-name = "SYMBOLS";
             bindings = <
-  &none  &kp N1  &kp N2  &kp N3     &kp N4  &none     &none   &kp T   &kp Y   &kp MINUS  &kp EQUAL  &none
-  &none  &kp N5  &kp N6  &kp N7     &kp N8  &none     &none   &kp G   &kp H   &kp LBKT   &kp RBKT   &none
-  &none  &kp N9  &kp N0  &kp GRAVE  &none   &none     &none   &kp B   &kp N   &kp SQT    &kp BSLH   &none
-                         &trans     &trans  &trans    &trans  &trans  &trans
+  &none  &kp N1  &kp N2  &kp N3  &kp T   &none     &none   &kp Y   &kp GRAVE  &kp MINUS  &kp EQUAL  &none
+  &none  &kp N4  &kp N5  &kp N6  &kp G   &none     &none   &kp H   &kp BSLH   &kp N9     &kp N0     &none
+  &none  &kp N7  &kp N8  &none   &kp B   &none     &none   &kp N   &kp SQT    &kp LBKT   &kp RBKT   &none
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -90,10 +90,10 @@
         control_layer {
             display-name = "f-keys";
             bindings = <
-  &none  &kp F1  &kp F2   &kp F3   &kp F4   &none     &none   &none   &none           &none  &none  &none
-  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none     &none   &none   &kp LEFT_ARROW  &none  &none  &none
-  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none   &mo 5   &none           &none  &none  &none
-                          &trans   &trans   &trans    &trans  &trans  &trans
+  &none  &kp F1  &kp F2   &kp F3   &kp F4   &none     &none   &none     &none   &none  &none  &none
+  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none     &none   &kp LEFT  &none   &none  &none  &none
+  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none     &none   &mo 5     &none   &none  &none  &none
+                          &trans   &trans   &trans    &trans  &trans    &trans
             >;
         };
 
