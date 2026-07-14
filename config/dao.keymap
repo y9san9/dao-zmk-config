@@ -148,6 +148,36 @@
             bindings = <&kp NUMBER_8>;
             key-positions = <37 26>;
         };
+
+        kp-esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <40 13>;
+        };
+
+        kp-tab {
+            bindings = <&kp TAB>;
+            key-positions = <40 14>;
+        };
+
+        kp-space {
+            bindings = <&kp SPACE>;
+            key-positions = <40 15>;
+        };
+
+        kp-backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <40 16>;
+        };
+
+        kp-delete {
+            bindings = <&kp DELETE>;
+            key-positions = <40 4>;
+        };
+
+        kp-enter {
+            bindings = <&kp ENTER>;
+            key-positions = <40 28>;
+        };
     };
 
     keymap {
