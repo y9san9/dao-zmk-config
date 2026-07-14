@@ -63,6 +63,91 @@
             bindings = <&kp N>;
             key-positions = <37 31>;
         };
+
+        kp-grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <37 8>;
+        };
+
+        kp-backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <37 20>;
+        };
+
+        kp-quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <37 32>;
+        };
+
+        kp-minus {
+            bindings = <&kp MINUS>;
+            key-positions = <37 9>;
+        };
+
+        kp-9 {
+            bindings = <&kp NUMBER_9>;
+            key-positions = <37 21>;
+        };
+
+        kp-left-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <37 33>;
+        };
+
+        kp-equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <37 10>;
+        };
+
+        kp-0 {
+            bindings = <&kp NUMBER_0>;
+            key-positions = <37 22>;
+        };
+
+        kp-right-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <37 34>;
+        };
+
+        kp-1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <1 37>;
+        };
+
+        kp-2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <2 37>;
+        };
+
+        kp-3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <37 3>;
+        };
+
+        kp-4 {
+            bindings = <&kp NUMBER_4>;
+            key-positions = <37 13>;
+        };
+
+        kp-5 {
+            bindings = <&kp NUMBER_5>;
+            key-positions = <37 14>;
+        };
+
+        kp-6 {
+            bindings = <&kp NUMBER_6>;
+            key-positions = <37 15>;
+        };
+
+        kp-7 {
+            bindings = <&kp NUMBER_7>;
+            key-positions = <37 25>;
+        };
+
+        kp-8 {
+            bindings = <&kp NUMBER_8>;
+            key-positions = <37 26>;
+        };
     };
 
     keymap {
@@ -81,9 +166,9 @@
         extra_layer {
             display-name = "SYMBOLS";
             bindings = <
-  &none  &kp N1  &kp N2  &kp N3  &none   &none     &none   &none   &kp GRAVE  &kp MINUS  &kp EQUAL  &none
-  &none  &kp N4  &kp N5  &kp N6  &none   &none     &none   &none   &kp BSLH   &kp N9     &kp N0     &none
-  &none  &kp N7  &kp N8  &none   &none   &none     &none   &none   &kp SQT    &kp LBKT   &kp RBKT   &none
+  &none  &kp N1  &kp N2  &kp N3  &kp T   &none     &none   &kp Y   &kp GRAVE  &kp MINUS  &kp EQUAL  &none
+  &none  &kp N4  &kp N5  &kp N6  &kp G   &none     &none   &kp H   &kp BSLH   &kp N9     &kp N0     &none
+  &none  &kp N7  &kp N8  &none   &kp B   &none     &none   &kp N   &kp SQT    &kp LBKT   &kp RBKT   &none
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
