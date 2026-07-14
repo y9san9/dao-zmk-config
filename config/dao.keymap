@@ -31,7 +31,37 @@
 
         caps {
             bindings = <&kp CAPS>;
-            key-positions = <28 31 39>;
+            key-positions = <38 16 19>;
+        };
+
+        kp-t {
+            bindings = <&kp T>;
+            key-positions = <37 4>;
+        };
+
+        kp-g {
+            bindings = <&kp G>;
+            key-positions = <37 16>;
+        };
+
+        kp-b {
+            bindings = <&kp B>;
+            key-positions = <37 28>;
+        };
+
+        kp-y {
+            bindings = <&kp Y>;
+            key-positions = <37 7>;
+        };
+
+        kp-h {
+            bindings = <&kp H>;
+            key-positions = <37 19>;
+        };
+
+        kp-n {
+            bindings = <&kp N>;
+            key-positions = <37 31>;
         };
     };
 
@@ -51,9 +81,9 @@
         extra_layer {
             display-name = "SYMBOLS";
             bindings = <
-  &none  &kp N1  &kp N2  &kp N3  &kp T   &none     &none   &kp Y   &kp GRAVE  &kp MINUS  &kp EQUAL  &none
-  &none  &kp N4  &kp N5  &kp N6  &kp G   &none     &none   &kp H   &kp BSLH   &kp N9     &kp N0     &none
-  &none  &kp N7  &kp N8  &none   &kp B   &none     &none   &kp N   &kp SQT    &kp LBKT   &kp RBKT   &none
+  &none  &kp N1  &kp N2  &kp N3  &none   &none     &none   &none   &kp GRAVE  &kp MINUS  &kp EQUAL  &none
+  &none  &kp N4  &kp N5  &kp N6  &none   &none     &none   &none   &kp BSLH   &kp N9     &kp N0     &none
+  &none  &kp N7  &kp N8  &none   &none   &none     &none   &none   &kp SQT    &kp LBKT   &kp RBKT   &none
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
