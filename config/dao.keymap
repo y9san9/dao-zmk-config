@@ -17,6 +17,8 @@
 
 &mt { quick_tap_ms = <200>; };
 
+&sk { quick-release; };
+
 / {
     chosen {
         zmk,physical_layout = &dao_crkbd_layout;
