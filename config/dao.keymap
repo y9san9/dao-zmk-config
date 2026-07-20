@@ -178,6 +178,46 @@
             bindings = <&kp ENTER>;
             key-positions = <40 28>;
         };
+
+        sk-left-shift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <38 16>;
+        };
+
+        sk-left-control {
+            bindings = <&sk LEFT_CONTROL>;
+            key-positions = <38 15>;
+        };
+
+        sk-left-command {
+            bindings = <&sk LEFT_COMMAND>;
+            key-positions = <38 14>;
+        };
+
+        sk-left-alt {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <38 13>;
+        };
+
+        sk-right-shift {
+            bindings = <&sk RIGHT_SHIFT>;
+            key-positions = <38 19>;
+        };
+
+        sk-right-control {
+            bindings = <&sk RIGHT_CONTROL>;
+            key-positions = <38 20>;
+        };
+
+        sk-right-command {
+            bindings = <&sk RIGHT_COMMAND>;
+            key-positions = <38 21>;
+        };
+
+        sk-right-alt {
+            bindings = <&sk RIGHT_ALT>;
+            key-positions = <38 22>;
+        };
     };
 
     keymap {
