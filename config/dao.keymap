@@ -220,6 +220,128 @@
             bindings = <&sk RIGHT_ALT>;
             key-positions = <38 22>;
         };
+
+        kp-th {
+            bindings = <&kp_th>;
+            key-positions = <37 4 19>;
+        };
+
+        kp-gh {
+            bindings = <&kp_gh>;
+            key-positions = <37 16 19>;
+        };
+
+        kp-ng {
+            bindings = <&kp_ng>;
+            key-positions = <37 31 16>;
+        };
+
+        kp-ght {
+            bindings = <&kp_ght>;
+            key-positions = <37 16 19 4>;
+        };
+
+        kp-nt {
+            bindings = <&kp_nt>;
+            key-positions = <37 31 4>;
+        };
+
+        kp-ty {
+            bindings = <&kp_ty>;
+            key-positions = <4 7 37>;
+        };
+
+        kp-tt {
+            bindings = <&kp_tt>;
+            key-positions = <37 4 3>;
+        };
+
+        kp-gg {
+            bindings = <&kp_gg>;
+            key-positions = <37 16 15>;
+        };
+
+        kp-bb {
+            bindings = <&kp_bb>;
+            key-positions = <37 28 27>;
+        };
+
+        kp-nn {
+            bindings = <&kp_nn>;
+            key-positions = <37 31 32>;
+        };
+    };
+
+    macros {
+        kp_th: kp_th {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H>;
+            label = "KP_TH";
+        };
+
+        kp_gh: kp_gh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp H>;
+            label = "KP_GH";
+        };
+
+        kp_ng: kp_ng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp G>;
+            label = "KP_NG";
+        };
+
+        kp_ght: kp_ght {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp H &kp T>;
+            label = "KP_GHT";
+        };
+
+        kp_nt: kp_nt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp T>;
+            label = "KP_NT";
+        };
+
+        kp_ty: kp_ty {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp Y>;
+            label = "KP_TY";
+        };
+
+        kp_tt: kp_tt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp T>;
+            label = "KP_TT";
+        };
+
+        kp_gg: kp_gg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp G>;
+            label = "KP_GG";
+        };
+
+        kp_bb: kp_bb {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp B>;
+            label = "KP_BB";
+        };
+
+        kp_nn: kp_nn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "KP_NN";
+        };
     };
 
     keymap {
